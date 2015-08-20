@@ -19,7 +19,7 @@ class Appointment < ActiveRecord::Base
   private
 
   def start_before_end
-      errors.add(:start_time, "Enter date before end_time. start_time: '#{start_time}', end_time: '#{end_time}'") if (start_time > end_time)
+    errors.add(:start_time, "Enter date before end_time. start_time: '#{start_time}', end_time: '#{end_time}'") if (start_time > end_time)
   end
 
   def start_future_time

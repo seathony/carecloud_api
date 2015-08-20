@@ -14,7 +14,7 @@ class Api::V1::AppointmentsController < ApplicationController
   end
 
   def show
-      render json: @appointment
+    render json: @appointment
   end
 
   def create
